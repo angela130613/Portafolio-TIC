@@ -8,26 +8,157 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
     font-family: 'Kaushan Script', cursive;
-    display: flex;
-    flex-direction: column;
-    text-shadow: 0 0 5px#b7a8ff,
-    0 0 25px#a188fd,
-    0 0 50px#8358fa,
-    0 0 100px#7435f2;
-    
+    background: linear-gradient(to top, #a385ff, #824dff, #7830f7, #6a1ee3, #5818bf );
 }
 
 header{
-    width: 100%;
-    height: 15%;
-    background: linear-gradient(to top, #dbaaff, #c573ff, #b13eff, #9d19ff, #890ae6 );
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgb(216, 157, 255);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* z-index: 1000; */
-    box-shadow: 0 .5rem 1rem #fee7e2;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(192, 72, 207);
     padding: 1rem 5%;
+}
+
+header .encabezado{
+    font-size: 220%;
+    color: #ab2dff;
+    font-size: 120%;
+    text-shadow: 0 0 5px rgb(0, 0, 0),
+    0 0 25px #9706ff,
+    0 0 50px #8300f8,
+    0 0 100px #7700d6;
+}
+
+header .mmc a{
+    padding: 0 1.5rem;
+    color: #ab2dff;
+    font-size: 120%;
+    text-shadow: 0 0 5px rgb(0, 0, 0),
+    0 0 25px #9706ff,
+    0 0 50px #8300f8,
+    0 0 100px #7700d6;
+}
+
+header .mmc a:hover {
+    color:#5c4dff;
+}
+
+img {
+    padding-right: 5px;
+    width: 190px;
+    height: 80px;
+    border-radius: 600px;
+    box-shadow: 0 0 25px#9706ff
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.olis {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../Portafolio/img/encabezado.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.olis .contenido {
+    max-width: 50rem;
+}
+
+.olis .contenido h3{
+    font-size: 5rem;
+    text-shadow: 0 0 5px#bb2dff,
+    0 0 25px #9706ff,
+    0 0 50px #8300f8,
+    0 0 100px #7700d6;
+    color: rgb(0, 84, 209);
+
+}
+
+.olis .contenido span{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.5;
+
+}
+
+.olis .contenido  p{
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.5rem 0;
+    line-height: 1.5;
+    
+}
+
+.camis{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(71, 145, 255);
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #ba5ae7;
+    border-radius: 100px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.majo{
+    font-size: 1rem;
+    color: black;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #ffbedc;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.majo p{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+footer {
+   position: relative;
+   width: 100%;
+   background: rgb(216, 157, 255);
+   min-height: 100px;
+   padding: 20px 50px;
+   margin-top: 30px;
+}
+
+footer .iconos_2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+footer .iconos_2 a i{
+    font-size: 2em;
+    color: #ab2dff;
+    margin: 0 50px;
+    display: inline;
+    transition: 0.5s;
+    cursor: pointer;
+    text-shadow: 0 0 5px rgb(0, 0, 0),
+    0 0 25px #9706ff,
+    0 0 50px #8300f8,
+    0 0 100px #7700d6;
+}
+
+footer .iconos_2 a i:hover{
+    color: rgb(124, 0, 196);
 }
